@@ -9,3 +9,7 @@ class Task {
     this.priority = priorityParameter;
   }
 }
+
+let tasks: Task[] = [];
+tasks.push(new Task('Do the dishes.', 'Medium'));
+console.log(tasks);
