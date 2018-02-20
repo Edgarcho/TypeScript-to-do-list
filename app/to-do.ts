@@ -3,10 +3,8 @@ class Task {
   priority: string;
   done: boolean;
 
-  constructor(descriptionParameter: string, priorityParameter: string){
+  constructor(public description: string, public priority: string){
     this.done = false;
-    this.description = descriptionParameter;
-    this.priority = priorityParameter;
   }
 }
 
