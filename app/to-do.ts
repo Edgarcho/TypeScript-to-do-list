@@ -1,13 +1,14 @@
 class Task {
-  description: string;
-  priority: string;
-  done: boolean;
+  done: boolean = false;
 
-  constructor(public description: string, public priority: string){
-    this.done = false;
-  }
+  constructor(public description: string, public priority: string){}
 }
 
 let tasks: Task[] = [];
 tasks.push(new Task('Do the dishes.', 'Medium'));
-console.log(tasks);
+tasks.push(new Task('Buy chocolate.','Low'));
+tasks.push(new Task('Do laundry.','High'));
+
+for(var task of tasks){
+  console.log(task);
+}
